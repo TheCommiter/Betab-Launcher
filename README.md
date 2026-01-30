@@ -19,6 +19,13 @@ cmake --build .
 ./vita_shell
 ```
 
+### Windows SDL2 Notes
+
+If CMake cannot locate SDL2, set one of the following before configuring:
+
+- `SDL2_DIR` to the SDL2 install root (containing `include/` and `lib/`), or
+- `SDL2_INCLUDE_DIR` and `SDL2_LIBRARY` explicitly.
+
 ## Data Files
 
 - `data/library.json`: App/game metadata.
