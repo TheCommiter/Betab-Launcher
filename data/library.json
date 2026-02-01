@@ -1,0 +1,9 @@
+[
+  {
+    "id": "app.music",
+    "title": "Music",
+    "desc": "Listen to your library",
+    "cmd_linux": ["echo", "Launching Music"],
+    "cmd_windows": ["cmd", "/c", "echo", "Launching Music"]
+  }
+]
