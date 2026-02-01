@@ -26,6 +26,9 @@ If CMake cannot locate SDL2, set one of the following before configuring:
 - `SDL2_DIR` to the SDL2 install root (containing `include/` and `lib/`), or
 - `SDL2_INCLUDE_DIR` and `SDL2_LIBRARY` explicitly.
 
+If you are using vcpkg, install `sdl2` and pass the toolchain file to CMake, e.g.
+`cmake -DCMAKE_TOOLCHAIN_FILE=path/to/vcpkg/scripts/buildsystems/vcpkg.cmake ..`.
+
 ## Data Files
 
 - `data/library.json`: App/game metadata.
