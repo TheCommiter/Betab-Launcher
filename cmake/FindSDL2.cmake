@@ -11,6 +11,7 @@ find_path(SDL2_INCLUDE_DIR
 
 find_library(SDL2_LIBRARY
   NAMES SDL2
+  NAMES SDL2 SDL2main
   HINTS
     ENV SDL2_LIBRARY
     ${SDL2_DIR}
@@ -45,3 +46,5 @@ endif()
 
 set(SDL2_INCLUDE_DIRS "${SDL2_INCLUDE_DIR}")
 set(SDL2_LIBRARIES "${SDL2_LIBRARY}")
+  endif()
+endif()
